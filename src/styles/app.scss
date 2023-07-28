@@ -1,0 +1,19 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './variables.scss';
+@import './mixins.scss';
+@import './settings.scss';
+
+
+
+// components and pages styles
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/catalog.scss';
+@import './components/sign_in.scss';
+@import './components/not_found.scss';
+@import './components/current_book.scss';
+@import './components/accordion.scss';
+@import './components/basket.scss';
+@import './components/counter.scss';
+@import './components/purchase.scss';

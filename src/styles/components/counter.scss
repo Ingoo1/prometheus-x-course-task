@@ -1,0 +1,33 @@
+.counter {
+    margin-right: $var1;
+    font-size: inherit;
+
+    &__btn {
+        cursor: pointer;
+        padding: 0.5rem;
+        border: 1px solid $main-color;
+        border-radius: 0.5rem;
+    }
+
+    &__input {
+        text-align: center;
+        font-size: $var2;
+        font-weight: bold;
+        border-bottom: 1px solid $main-color;
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+        max-width: 4rem;
+    }
+
+    @include rm(480) {
+        &__input {
+            font-size: 3rem;
+            max-width: 6rem;
+            padding-top: 0;
+        }
+
+        &__btn {
+            padding: $var1;
+        }
+    }
+}

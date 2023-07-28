@@ -1,0 +1,118 @@
+.header {
+    min-height: $hf-height;
+    padding: 1rem 0.8rem;
+    display: flex;
+    align-items: center;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__left {
+        margin-bottom: 1rem;
+    }
+
+    &__left a,
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__user,
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__user {
+        svg {
+            margin: 0 0.5rem;
+        }
+    }
+
+    &__avatar {
+        svg {
+            border-radius: 50%;
+            border: 2px solid $main-color;
+        }
+    }
+
+    &__logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        color: $main-color;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &__btn {
+        width: 3.2rem;
+        height: 3.2rem;
+        cursor: pointer;
+    }
+
+    svg {
+        transition: transform 0.3s linear;
+    }
+
+    &__basket:hover,
+    &__theme:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+}
+
+@include rm(380) {
+    .header {
+        padding: 2rem;
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__right {
+            svg {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+@include rm(480) {
+    .header {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include rm(768) {
+    .header {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__left {
+            margin: 0;
+        }
+    }
+}
+
+@include rm(1024) {
+    .header {
+        &__title {
+            font-size: 2.3rem;
+        }
+    }
+}

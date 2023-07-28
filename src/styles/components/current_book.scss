@@ -1,0 +1,129 @@
+$var1: 1rem;
+$var2: 2rem;
+
+.current_book {
+    min-height: $main-height;
+    font-size: 1.6rem;
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: $var2;
+    }
+
+    &__text {
+        margin-bottom: $var1;
+
+        strong {
+            font-weight: bold;
+            color: $main-color;
+        }
+
+    }
+
+    &__click {
+        margin-bottom: $var2;
+    }
+
+    &__description {
+        text-align: justify;
+    }
+
+    &__sell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $var2;
+    }
+
+    &__price {
+        padding: 0.5rem;
+        border-bottom: 1px solid $main-color;
+        margin: 0 0 $var1 0;
+
+        span {
+            font-size: $var2;
+            font-weight: bold;
+        }
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__counter {
+        margin-right: $var1;
+    }
+}
+
+
+@include rm(480) {
+    .current_book {
+        &__sell {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__price {
+            margin-bottom: 0;
+            padding-top: 0;
+
+            span {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@include rm(680) {
+    .current_book {
+        font-size: $var2;
+    }
+}
+
+@include rm(768) {
+    .current_book {
+        font-size: 2.5rem;
+
+
+        &__top {
+            display: flex;
+            margin-bottom: $var2;
+        }
+
+        &__img {
+            flex: 0 0 auto;
+            margin-right: $var2;
+        }
+
+        &__text {
+            margin-bottom: $var2;
+        }
+
+        &__sell,
+        &__price {
+            margin-bottom: 0;
+        }
+
+        &__sell {
+            padding-top: $var2;
+            border-top: 4px dotted $main-color;
+        }
+
+        &__price {
+            font-size: 3rem;
+        }
+
+        .accordion__title {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@include rm(900) {
+    .current_book {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    min-height: $hf-height;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__link {
+        transition: all 0.3s linear;
+        color: $main-color;
+    }
+}

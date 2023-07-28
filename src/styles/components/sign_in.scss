@@ -1,0 +1,127 @@
+.auth {
+
+    min-height: $main-height;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include rm(480) {
+            font-size: 3rem;
+        }
+
+        @include rm(768) {
+            font-size: 4rem;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.5rem;
+        color: $main-color;
+        margin-bottom: 1rem;
+    }
+
+    &__wrap {
+        padding: 1rem 2rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color: #EDEEF2;
+    }
+
+    &__picture {
+        max-width: 12rem;
+        margin-bottom: 1rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        &__input {
+            border-bottom: 1px solid $main-color;
+            display: block;
+            width: 100%;
+            color: $main-color;
+            font-weight: bold;
+            padding: 0.5rem;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+
+        &__container {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        &__message {
+            position: absolute;
+            bottom: -2.2rem;
+            color: $error-color;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        &__btn {
+            &:disabled:hover {
+                color: $error-color;
+                box-shadow: none;
+            }
+        }
+    }
+
+}
+
+@include rm(768) {
+    .auth {
+        &__wrap {
+            flex-direction: row;
+            width: auto;
+        }
+
+        &__picture {
+            max-width: 30rem;
+        }
+    }
+}
+
+@include rm(1024) {
+    .auth {
+        &__wrap {
+            width: auto;
+            max-width: 480px;
+        }
+
+        &__picture {
+            max-width: 30rem;
+        }
+    }
+}

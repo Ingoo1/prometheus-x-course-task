@@ -1,0 +1,11 @@
+.not-found {
+    min-height: $main-height;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .not-found__warp {
+        max-width: 300px;
+    }
+}
