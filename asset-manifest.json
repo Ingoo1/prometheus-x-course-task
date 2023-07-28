@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/prometheus-x-course-task/static/css/main.e29d18c4.css",
+    "main.js": "/prometheus-x-course-task/static/js/main.92dbeb32.js",
+    "static/media/roboto-v30-latin-italic.woff": "/prometheus-x-course-task/static/media/roboto-v30-latin-italic.d037cb4792991826de7d.woff",
+    "static/media/roboto-v30-latin-700.woff": "/prometheus-x-course-task/static/media/roboto-v30-latin-700.77ecb942e56f9b036426.woff",
+    "static/media/roboto-v30-latin-regular.woff": "/prometheus-x-course-task/static/media/roboto-v30-latin-regular.f1e2a76794cb86b2aa8e.woff",
+    "static/media/roboto-v30-latin-italic.woff2": "/prometheus-x-course-task/static/media/roboto-v30-latin-italic.e10742dbb1d4a0864ba8.woff2",
+    "static/media/roboto-v30-latin-700.woff2": "/prometheus-x-course-task/static/media/roboto-v30-latin-700.227c93190fe7f82de3f8.woff2",
+    "static/media/roboto-v30-latin-regular.woff2": "/prometheus-x-course-task/static/media/roboto-v30-latin-regular.b009a76ad6afe4ebd301.woff2",
+    "index.html": "/prometheus-x-course-task/index.html",
+    "main.e29d18c4.css.map": "/prometheus-x-course-task/static/css/main.e29d18c4.css.map",
+    "main.92dbeb32.js.map": "/prometheus-x-course-task/static/js/main.92dbeb32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e29d18c4.css",
+    "static/js/main.92dbeb32.js"
+  ]
+}
